@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oh my food</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="index">
+    <%- include('../composants/header.html'); %>
+    <h1>Ohmyfood</h1>
+    <%- include('../composants/bouton.html', {texte:"machin"}); %>
+    <section>
+        <%- include('../composants/restaurant.html', {
+            nom:"la palette du goût", 
+            adresse:"Mesnilmontant",
+            classe : "nouveau",
+            lien : "la_palette_du_gout"
+        }); %>
+        <%- include('../composants/restaurant.html', {
+            nom:"la note enchantée", 
+            adresse:"Charonne",
+            classe : "nouveau",
+            lien : "la_note_enchantee"
+        }); %>
+        <%- include('../composants/restaurant.html', {
+            nom:"à la française", 
+            adresse:"Cité_Rouge",
+            classe : "",
+            lien : "a_la_française"
+        }); %>
+        <%- include('../composants/restaurant.html', {
+            nom:"le délice des sens", 
+            adresse:"Folie_Méricourt",
+            classe : "",
+            lien : "le_delice_des_sens"
+        }); %>
+    </section>
+</body>
+</html>

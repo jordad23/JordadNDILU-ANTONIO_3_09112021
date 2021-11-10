@@ -1,0 +1,10 @@
+article.plat{
+    @include flexCentered;
+    h2{
+        color:blue;
+    }
+    p{
+        color: $primaire;
+    }
+
+}

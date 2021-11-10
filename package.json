@@ -1,0 +1,24 @@
+{
+  "name": "jordad-p3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "buildCss": "npx gulp makeCss",
+    "watch": "npx gulp watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-ejs": "^5.1.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.36.0"
+  },
+  "description": ""
+}
