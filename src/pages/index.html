@@ -9,13 +9,18 @@
 </head>
 <body class="index">
     <%- include('../composants/header.html'); %>
-    <h1>Ohmyfood</h1>
-        <ol>
-            <li>Choisissez un restaurant</li>
-            <li>composez votre menus</li>
-            <li>Dégustez au restaurant</li>
-        </ol>
+    <h3>Paris, Belleville</h3>
+    <h1>Réservez le menu qui vous convient </h1>
+        
     <%- include('../composants/bouton.html', {texte:"Explorez nos restaurants"}); %>
+    <h2>Fonctionnement</h2>
+    
+    <ol>
+        <li>Choisissez un restaurant</li>
+        <li>composez votre menus</li>
+        <li>Dégustez au restaurant</li>
+    </ol>
+
     <section>
         <%- include('../composants/restaurant.html', {
             nom:"la palette du goût", 
@@ -42,5 +47,6 @@
             lien : "le_delice_des_sens"
         }); %>
     </section>
+<%- include("../composants/footer.html"); %>
 </body>
 </html>

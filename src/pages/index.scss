@@ -1,17 +1,19 @@
 body.index{
-    max-width: 360px;
-    height: 260rem;
     border: 1px solid;
     margin: auto;
 
 
     li{
         background-color: $fondClair;
+        height: 5rem;
         border-radius:.5rem;
         &:hover{
-            background-color: lighten($primaire, 30%);
-
+            background-color: lighten($primaire, 30%);                
         }
+    }
+
+    h1,h3{
+        text-align: center;
     }
 
 }
