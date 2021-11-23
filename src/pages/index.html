@@ -10,7 +10,12 @@
 <body class="index">
     <%- include('../composants/header.html'); %>
     <h1>Ohmyfood</h1>
-    <%- include('../composants/bouton.html', {texte:"machin"}); %>
+        <ol>
+            <li>Choisissez un restaurant</li>
+            <li>composez votre menus</li>
+            <li>Dégustez au restaurant</li>
+        </ol>
+    <%- include('../composants/bouton.html', {texte:"Explorez nos restaurants"}); %>
     <section>
         <%- include('../composants/restaurant.html', {
             nom:"la palette du goût", 

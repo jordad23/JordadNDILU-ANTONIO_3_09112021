@@ -4,4 +4,14 @@ body.index{
     border: 1px solid;
     margin: auto;
 
+
+    li{
+        background-color: $fondClair;
+        border-radius:.5rem;
+        &:hover{
+            background-color: lighten($primaire, 30%);
+
+        }
+    }
+
 }
