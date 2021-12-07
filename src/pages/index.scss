@@ -13,13 +13,15 @@ body.index {
       display:flex;
       align-items: center;
       width:80%;
-      margin: .5rem auto;
+      margin: 1rem auto;
+      @include shadow;
       &:before{
           @include flexCentered;
           height:2rem;
           width:2rem;
           border-radius: 50%;
-          background-color: red;
+          background-color:  $primaire;
+          color:white;
           margin-left:-1rem;
           margin-right:1rem;
       }
@@ -35,15 +37,20 @@ body.index {
         background-color: lighten($primaire, 30%);
       }
     }
+    i{
+      color:#7e7e7e;
+      margin-right:1rem;
+    }
   }
 
   h1,
-  h3 {
+  h3,p {
     text-align: center;
   }
 
   section{
     background-color: $fondClair;
+    
   }
 
 }

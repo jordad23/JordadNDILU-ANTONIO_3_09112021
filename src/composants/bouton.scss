@@ -1,6 +1,10 @@
 button{
-    background-color: #9356DC ;
+    background: linear-gradient(7deg,$primaire, $secondaire);
     border-radius: 1rem;
     margin-left: 6rem;
     margin-bottom: 2rem;
+    padding: 1rem;
+    color: white;
+    border:none;
+    @include shadow;
 }
