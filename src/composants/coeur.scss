@@ -1,0 +1,8 @@
+h2.coeur{
+    display : flex;
+    justify-content: space-between;
+    &::after{
+        content:"\f004";
+        font-family: "Font Awesome 5 Free";
+    }
+}
