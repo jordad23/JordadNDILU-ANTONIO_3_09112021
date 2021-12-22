@@ -1,8 +1,9 @@
 header {
     @include flexCentered;
-    width: fit-content;
+    width: 100%;
+    padding:1rem 0;
     img{
         width: 75%;
-        max-width: 350px;
+        max-width: 250px;
     }
 }

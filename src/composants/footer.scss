@@ -1,13 +1,25 @@
 footer {
     background-color: $fondSombre;
     
-    h4{
+    & > *{
+        padding:1rem;
+        margin:0;
+    }
+    h4 {
         font-family : 'Shrikhand', cursif ;
         color:white;
         text-align: left;
+        
+        
     }
 
-    ul{
+    ul {
          list-style-type: none;
+         color: white;
+         
+    }
+
+    i{
+        width:2rem;
     }
 }

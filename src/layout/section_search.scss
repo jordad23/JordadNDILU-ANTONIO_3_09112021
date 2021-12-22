@@ -1,0 +1,11 @@
+section.search {
+    background-color:$fondMoyen !important;
+    text-align:center;
+    padding : .5rem;
+    input {
+        border:none;
+        background-color:$fondMoyen;
+        font-weight: bold;
+        width:30%;
+    }
+}
