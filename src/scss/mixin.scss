@@ -7,3 +7,7 @@
 @mixin shadow{
     box-shadow:0 0px 20px darken($fondClair, 20%);
 }
+
+@mixin transition{
+    transition: all 1s;
+}

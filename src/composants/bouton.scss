@@ -7,4 +7,9 @@ button{
     color: white;
     border:none;
     @include shadow;
+    @include transition;
+    &:hover{
+        background: linear-gradient(7deg,$primaire, lighten($secondaire, 10%));
+        box-shadow:0 0px 20px darken($fondClair, 30%);
+    }
 }

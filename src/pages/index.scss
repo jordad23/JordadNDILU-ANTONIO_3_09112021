@@ -14,7 +14,9 @@ body.index {
       align-items: center;
       width:80%;
       margin: 1rem auto;
+      cursor: pointer;
       @include shadow;
+      @include transition;
       &:before{
           @include flexCentered;
           height:2rem;
@@ -35,10 +37,13 @@ body.index {
       
       &:hover {
         background-color: lighten($primaire, 30%);
+        i{
+          color: $primaire;
+        }
       }
     }
     i{
-      color:#7e7e7e;
+      color:$fondTresMoyen;
       margin-right:1rem;
     }
   }
@@ -50,7 +55,11 @@ body.index {
 
   section{
     background-color: $fondClair;
-    
+    padding-bottom: 1rem;
+  }
+
+  h2{
+    margin-left: 1rem;
   }
 
   h3 i{

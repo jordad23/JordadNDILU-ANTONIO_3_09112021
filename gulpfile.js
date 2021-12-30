@@ -17,8 +17,8 @@ function makeCss() {
     .pipe(sourcemaps.init())
     .pipe(gulpConcat("style.css"))
     .pipe(sass().on('error', sass.logError))
-    .pipe(sourcemaps.write())
     .pipe(autoprefixer({ cascade: false }))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('./www/css'));
 };
 
