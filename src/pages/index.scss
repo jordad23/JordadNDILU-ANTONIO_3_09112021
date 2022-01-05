@@ -54,8 +54,10 @@ body.index {
   }
 
   section{
-    background-color: $fondClair;
     padding-bottom: 1rem;
+  }
+  section:first-of-type{
+    background-color: $fondClair;
   }
 
   h2{

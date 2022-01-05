@@ -16,15 +16,17 @@ article.restaurant {
         content:"nouveau";
         background-color: $tertiaire;
         position: relative;
-        top: -240px;
+        top: -210px;
         left: 14rem;
         padding: .5rem;
     }
     h2{
-        padding:.5rem;
+        padding:0 .5rem 0 0;
+        margin:0;
     }
     address{
-        padding:.5rem;
-        margin-left: 0.5rem;
+        padding:0 .5rem 0 0;
+        margin:0;
+        // margin-left: 0.5rem;
     }
 }

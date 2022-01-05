@@ -1,10 +1,28 @@
-h2.coeur{
-    display : flex;
-    justify-content: space-between;
-    &::after{
-        content:"\f004";
-        font-family: "Font Awesome 5 Free";
-color: $primaire ;
-    }
+h2.coeur {
+  display: flex;
+  justify-content: space-between;
+  height: 2.5rem;
+  &::after {
+    content: "\f004";
+    font-family: "Font Awesome 5 Free";
+    color: $fondSombre;
+    font-weight: initial;
+  }
+  &:hover::after {
+    font-weight: bold;
+    background: -webkit-linear-gradient(-90deg, white, $secondaire, $primaire);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: remplissage 1s both;
+  }
+}
 
+@keyframes remplissage{
+    from {
+        background-position-y: .1rem;
+    }
+    to{
+        
+    background-position-y: -1rem;
+    }
 }
