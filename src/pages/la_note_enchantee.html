@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Oh my food</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body class="menu">
+        <%- include('../composants/header.html'); %>
+        <img src="./images/restaurants/la_note_enchantee.jpg">
+        <h1> La note enchantée</h1>
+        <section>
+            <h2>Entrées</h2>
+            <%- include("../composants/plat.html", {
+                "titre" : "Ravioles de foie gras",
+                "ingredients": "Accompagnés de leur crème à la truffe",
+                "prix" : "25€"
+            }); %>
+            
+            
+            <%- include("../composants/plat.html", {
+                "titre" : "Caviar osciètre",
+                "ingredients": "Sur blini à la farine de blé noir",
+                "prix" : "35€"
+            }); %>
+
+            <%- include("../composants/plat.html", {
+                "titre" : "Homard et espuma de potiron",
+                "ingredients": "Mariné aux zestes d'orange",
+                "prix" : "20€"
+            }); %>
+
+            <%- include("../composants/plat.html", {
+                "titre" : "Foie gras de canard cuit entier",
+                "ingredients": "Confiture de figue et pain toasté",
+                "prix" : "35€"
+            }); %>
+        </section>
+
+        <section>
+            <h2>Plats</h2>
+            <%- include("../composants/plat.html", {
+                "titre" : "Noix de coquilles Saint-Jacques",
+                "ingredients": "Sur lit de purée de céleri-rave",
+                "prix" : "40€"
+            }); %>
+            
+            <%- include("../composants/plat.html", {
+                "titre" : "Langoustine poêlée",
+                "ingredients": "Purée de patate douce",
+                "prix" : "35€"
+            }); %>
+            
+            <%- include("../composants/plat.html", {
+                "titre" : "Mijoté de queue de boeuf",
+                "ingredients": "Et riz sauvage aux zestes de citron",
+                "prix" : "44€"
+            }); %>
+        </section>
+        <section>
+            <h2>Desserts</h2>
+            
+            <%- include("../composants/plat.html", {
+                "titre" : "Macaron noisette et chocolat",
+                "ingredients": "Glace au caramel brun et sel de Guérande",
+                "prix" : "18€"
+            }); %>
+            <%- include("../composants/plat.html", {
+                "titre" : "Baba au rhum revisité ",
+                "ingredients": "Avec son coulis de citron",
+                "prix" : "22€"
+            }); %>
+            <%- include("../composants/plat.html", {
+                "titre" : "Tarte au citron meringuée",
+                "ingredients": "Déstructurée",
+                "prix" : "23€"
+            }); %>
+        </section>
+        <%- include('../composants/bouton.html', {texte:"Commander"});  %>
+
+
+        <%- include("../composants/footer.html"); %>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

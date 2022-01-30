@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Oh my food</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body class="menu">
+        <%- include('../composants/header.html'); %>
+        <h1> Le delice des sens </h1>
+        <section>
+            <h2>Entrées</h2>
+            <%- include("../composants/plat.html", {
+                "titre" : "Tartare de thon",
+                "ingredients": "Assaisonné au yuzu",
+                "prix" : "25€"
+            }); %>
+            
+            
+            <%- include("../composants/plat.html", {
+                "titre" : "Bouchée de homard croustillant",
+                "ingredients": "Et sa farandole de petits légumes",
+                "prix" : "35€"
+            }); %>
+
+            <%- include("../composants/plat.html", {
+                "titre" : "Velouté de cèpes",
+                "ingredients": "Aux truffes",
+                "prix" : "20€"
+            }); %>
+
+           
+        </section>
+
+        <section>
+            <h2>Plats</h2>
+            <%- include("../composants/plat.html", {
+                "titre" : "Poulet rôti aux herbes de Provence",
+                "ingredients": "Et sa crème de truffe",
+                "prix" : "40€"
+            }); %>
+            
+            <%- include("../composants/plat.html", {
+                "titre" : "Langouste rôtie",
+                "ingredients": "Et ses légumes de saison",
+                "prix" : "35€"
+            }); %>
+            
+            <%- include("../composants/plat.html", {
+                "titre" : "Côte de boeuf Angus ",
+                "ingredients": "Et sa purée de panais",
+                "prix" : "44€"
+            }); %>
+        </section>
+        <section>
+            <h2>Desserts</h2>
+            
+            <%- include("../composants/plat.html", {
+                "titre" : "Paris-Brest",
+                "ingredients": "Revisité",
+                "prix" : "18€"
+            }); %>
+            <%- include("../composants/plat.html", {
+                "titre" : "Macaron au chocolat d'exception ",
+                "ingredients": "Et glace à la vanille de Madagascar",
+                "prix" : "22€"
+            }); %>
+            <%- include("../composants/plat.html", {
+                "titre" : "Mousse au chocolat ",
+                "ingredients": "Au piment d'Espelette et à la truffe noire",
+                "prix" : "23€"
+            }); %>
+
+
+        </section>
+        <%- include('../composants/bouton.html', {texte:"Commander"});  %>
+
+    <%- include("../composants/footer.html"); %>
+</body>
+</html>
+
+

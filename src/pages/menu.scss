@@ -1,0 +1,16 @@
+body.menu {
+  img {
+    width: 100%;
+  }
+  h2 {
+    text-transform: uppercase;
+    font-weight:normal ;
+    &::after {
+      display: block;
+      background-color: $tertiaire;
+      width: 3rem;
+      content: "";
+      height: 2px;
+    }
+  }
+}
