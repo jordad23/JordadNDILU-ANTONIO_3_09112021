@@ -1,16 +1,36 @@
 body.menu {
+ 
+  main{
+    background-color: $fondMoyen;
+    & > *{
+      padding: 0 1rem;
+    }
+  }
   img {
     width: 100%;
   }
+  h1{
+    border-radius   : 1rem 1rem 0 0;
+    margin-top      : -2rem;
+    background-color: $fondMoyen;
+    position        : relative;
+    padding-top     : 1rem;
+    font-family     : Shrikhand;
+    font-size       : 2rem;
+  }
   h2 {
     text-transform: uppercase;
-    font-weight:normal ;
+    font-size     : 1.2rem;
+    font-weight   : normal ;
     &::after {
-      display: block;
+      display         : block;
       background-color: $tertiaire;
-      width: 3rem;
-      content: "";
-      height: 2px;
+      width           : 3rem;
+      content         : "";
+      height          : 2px;
+    }
+    i{
+      margin-right: 1rem;
     }
   }
 }

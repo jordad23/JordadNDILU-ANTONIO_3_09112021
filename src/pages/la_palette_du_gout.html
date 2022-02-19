@@ -12,8 +12,10 @@
         <link rel="stylesheet" href="/css/style.css">
     </head>
     <body class="menu">
-        <%- include('../composants/header.html'); %>
-        <h1> La palette du gout </h1>
+        <%- include('../composants/header_menu.html'); %>
+        <img src="./images/restaurants/la_palette_du_gout.jpg">
+        <main>
+            <h1  class="coeur"> La palette du gout </h1>
         <section>
             <h2>Entrées</h2>
             <%- include("../composants/plat.html", {
@@ -80,7 +82,7 @@
 
         </section>
         <%- include('../composants/bouton.html', {texte:"Commander"});  %>
-
+    </main>
     <%- include("../composants/footer.html"); %>
 </body>
 </html>

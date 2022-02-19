@@ -1,23 +1,28 @@
-article.plat{
+article.plat {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  background-color:white;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  @include shadow;
+  
+  div {
+    width: 100%;
+  }
+  price {
     display: flex;
-    width:90%;
-    margin:auto;
-    div {
-        width:100%;
+    width: 3rem;
+  }
+  aside {
+    width: 0;
+    overflow-x: hidden;
+    transition: width 1s;
+    background-color: $tertiaire;
+  }
+  &:hover {
+    aside {
+      width: 2rem;
     }
-    price{
-        display: flex;
-        width : 3rem;
-    }
-    aside{
-        width:0;
-        overflow-x: hidden;
-        transition : width 1s;
-        background-color: $tertiaire;
-    }
-    &:hover{
-        aside{
-            width:2rem;
-        }
-    }
+  }
 }

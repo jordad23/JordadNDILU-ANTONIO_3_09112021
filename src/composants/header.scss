@@ -1,9 +1,23 @@
 header {
+  background-color: white;
+  width: 100%;
+  padding: 1rem 0;
+  box-shadow: 0 1px 4px black;
+  margin-bottom: 2px;
+  display: grid;
+  grid-template-areas: "retour logo .";
+  grid-template-columns: 2rem auto 2rem;
+  img {
+    grid-area: logo;
+    width: 50%;
+    max-width: 250px;
+    justify-self: center;
+  }
+  a {
+    grid-area: retour;
     @include flexCentered;
-    width: 100%;
-    padding:1rem 0;
-    img{
-        width: 50%;
-        max-width: 250px;
-    }
+    height:100%;
+    width:100%;
+    
+  }
 }

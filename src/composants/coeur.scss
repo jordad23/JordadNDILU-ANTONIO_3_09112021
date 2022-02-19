@@ -1,13 +1,15 @@
-h2.coeur {
+.coeur {
   display: flex;
   justify-content: space-between;
-  height: 2.5rem;
   &::after {
+    display: flex;
+    height: 2.5rem;
     content: "\f004";
     font-family: "Font Awesome 5 Free";
     color: $fondSombre;
     font-weight: initial;
   }
+
   &:hover::after {
     font-weight: bold;
     background: -webkit-linear-gradient(-90deg, white, $secondaire, $primaire);
@@ -17,12 +19,11 @@ h2.coeur {
   }
 }
 
-@keyframes remplissage{
-    from {
-        background-position-y: .1rem;
-    }
-    to{
-        
+@keyframes remplissage {
+  from {
+    background-position-y: 0.1rem;
+  }
+  to {
     background-position-y: -1rem;
-    }
+  }
 }
