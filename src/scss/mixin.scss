@@ -11,3 +11,9 @@
 @mixin transition{
     transition: all 1s;
 }
+
+@mixin ellipsis{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

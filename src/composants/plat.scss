@@ -2,29 +2,58 @@ article.plat {
   height: 68px;
   display: flex;
   margin: auto;
-  background-color:white;
+  background-color: white;
   border-radius: 1rem;
   margin-bottom: 1rem;
   @include shadow;
-  
+
   div {
-    width:100%;
-    line-height:70%;
+    width: calc(100% - 1rem);
+    margin-left: 1rem;
+    @include ellipsis;
+    padding-top: .75rem;
   }
-  
+  div > *{
+    padding: 0;
+    margin: 0;
+    @include ellipsis;
+  }
+
   price {
     display: flex;
     width: 3rem;
+    height:80%;
+    align-items : flex-end;
   }
   aside {
     width: 0;
     overflow-x: hidden;
     transition: width 1s;
     background-color: $tertiaire;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 1rem 1rem 0;
+    color: white;
+    &::after{
+      content:"\f058";
+      font-family: "Font Awesome 5 Free";
+      font-weight: bold;
+      transition : transform 1s;
+        transform : rotate(90deg);
+    }
   }
   &:hover {
     aside {
-      width: 2rem;
+      width: 3rem;
+      &::after{
+        transform : rotate(0deg);
+      }
+    }
+
+    div {
+      width: calc(100% - 4rem);
     }
   }
 }
