@@ -8,8 +8,10 @@ article.plat {
   @include shadow;
   
   div {
-    width: 100%;
+    width:100%;
+    line-height:70%;
   }
+  
   price {
     display: flex;
     width: 3rem;
