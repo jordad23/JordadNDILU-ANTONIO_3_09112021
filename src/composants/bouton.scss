@@ -1,18 +1,22 @@
-button{
-    background: linear-gradient(7deg,$primaire, $secondaire);
-    border-radius: 2rem ;
-    display:block;
-    margin: auto;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    height: 50px;
-    width: 185px;
-    color: white;
-    border:none;
-    @include shadow;
-    @include transition;
-    &:hover{
-        background: linear-gradient(7deg,$primaire, lighten($secondaire, 10%));
-        box-shadow:0 0px 20px darken($fondClair, 30%);
-    }
+button {
+  background: linear-gradient(7deg, $primaire, $secondaire);
+  border-radius: 2rem;
+  display: block;
+  margin: auto;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  height: 50px;
+  width: 185px;
+  color: white;
+  border: none;
+  @include shadow;
+  @include transition;
+  &:hover {
+    background: linear-gradient(7deg, $primaire, lighten($secondaire, 10%));
+    box-shadow: 0 0px 20px darken($fondClair, 30%);
+  }
+
+  @media screen AND (min-width: 1400px) {
+      color:red;
+  }
 }

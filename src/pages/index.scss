@@ -1,5 +1,4 @@
 body.index {
-
   ol {
     margin: 0;
     padding: 0;
@@ -8,64 +7,73 @@ body.index {
       background-color: $fondClair;
       height: 3rem;
       border-radius: 1rem;
-      display:flex;
+      display: flex;
       align-items: center;
-      width:80%;
+      width: 80%;
       margin: 1rem auto;
       cursor: pointer;
       @include shadow;
       @include transition;
-      &:before{
-          @include flexCentered;
-          height:2rem;
-          width:2rem;
-          border-radius: 50%;
-          background-color:  $primaire;
-          color:white;
-          margin-left:-1rem;
-          margin-right:1rem;
+      &:before {
+        @include flexCentered;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        background-color: $primaire;
+        color: white;
+        margin-left: -1rem;
+        margin-right: 1rem;
       }
-      
+
       @for $i from 1 through 3 {
         &:nth-child(#{$i}):before {
-            content:"#{$i}"
+          content: "#{$i}";
         }
       }
 
-      
       &:hover {
         background-color: lighten($primaire, 30%);
-        i{
+        i {
           color: $primaire;
         }
       }
     }
-    i{
-      color:$fondTresMoyen;
-      margin-right:1rem;
+    i {
+      color: $fondTresMoyen;
+      margin-right: 1rem;
     }
   }
 
   h1,
-  h3,p {
+  h3,
+  p {
     text-align: center;
   }
 
-  section{
+  section {
     padding-bottom: 1rem;
   }
-  section:first-of-type{
+  section:first-of-type {
     background-color: $fondClair;
   }
 
-  h2{
+  h2 {
     margin-left: 1rem;
+    grid-area: titre;
   }
 
-  h3 i{
+  h3 i {
     margin-right: 1rem;
   }
 
-
-
+  main {
+    @media screen AND (min-width: 1024px) {
+      display: grid;
+      grid-template-areas : "titre titre"
+      "r1 r2"
+      "r3 r4";
+    }
+    
+  }
 }
+
