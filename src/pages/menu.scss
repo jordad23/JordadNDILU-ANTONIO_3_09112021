@@ -1,5 +1,8 @@
 body.menu {
   background-color: $fondClair;
+  @media screen AND (min-width:768px){
+    background-color: white; 
+  }
  
   main{
     background-color: $fondClair;
