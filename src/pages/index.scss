@@ -44,7 +44,6 @@ body.index {
     }
   }
 
-  h1,
   h3,
   p {
     text-align: center;
@@ -55,6 +54,10 @@ body.index {
   }
   section:first-of-type {
     background-color: $fondClair;
+    h2{
+      text-align: center;
+      margin-left: initial;
+    }
   }
 
   h2 {
