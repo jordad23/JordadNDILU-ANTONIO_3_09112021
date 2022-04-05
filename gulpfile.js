@@ -29,6 +29,7 @@ function makeHtml() {
 }
 
 exports.makeCss = makeCss;
+exports.makeHtml = makeHtml;
 exports.watch = function () {
   browserSync.init({
     server: {
