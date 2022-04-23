@@ -6,6 +6,7 @@ article.plat {
   border-radius: 1rem;
   margin-bottom: 1rem;
   @include shadow;
+  animation: opening 2s both;
 
   div {
     width: calc(100% - 1rem);
@@ -21,7 +22,7 @@ article.plat {
 
   .price {
     display: flex;
-    width: 3rem;
+    width: 3rem !important;
     height:80%;
     align-items : flex-end;
   }
@@ -55,5 +56,22 @@ article.plat {
     div {
       width: calc(100% - 4rem);
     }
+  }
+}
+
+@keyframes opening{
+  from  {
+    margin-top:3rem;
+    opacity:0;
+  }
+  to {
+    margin-top:0;
+    opacity: 1;
+  }
+}
+
+@for $i from 1 through 5 {
+  article.plat:nth-of-type(#{$i}){
+    animation-delay: #{$i+1}s; 
   }
 }
