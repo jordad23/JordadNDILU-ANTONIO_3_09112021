@@ -15,8 +15,15 @@
     background: -webkit-linear-gradient(-90deg, white, $secondaire, $primaire);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: remplissage 1s both;
   }
+}
+
+h2.coeur:hover::after {
+  animation: remplissage 1s both;
+}
+
+h1.coeur:hover::after {
+  animation: remplissageMenu 1s both;
 }
 
 @keyframes remplissage {
@@ -25,5 +32,15 @@
   }
   to {
     background-position-y: -1rem;
+  }
+}
+
+
+@keyframes remplissageMenu{
+  from {
+    background-position-y: 0.1rem;
+  }
+  to {
+    background-position-y: -.6rem;
   }
 }

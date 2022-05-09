@@ -1,0 +1,46 @@
+.loader {
+  position: fixed;
+  background-color: $primaire;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: hidden;
+  animation: loaderBg 3s both;
+  h1 {
+    color: white;
+    animation: loaderAnim 1s ease infinite;
+  }
+}
+
+@keyframes loaderAnim {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+      transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes loaderBg {
+  0% {
+    width: 100vw;
+    height: 100vh;
+  }
+  99% {
+    width: 100vw;
+    height: 100vh;
+  }
+  100% {
+    width: 0;
+    height: 0;
+  }
+}
